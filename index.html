@@ -10,7 +10,8 @@
 <body>
   <header>
     <h1>Jennifer Lu</h1>
-    <p class="subtitle">Runner & Error Producer</p>
+    <p class="subtitle">Runner & Error Producer & Bird Watcher</p>
+     <button id="dark-mode-toggle">Dark Mode</button>
   </header>
 
   <section id="basic-info" class="card">
@@ -107,6 +108,19 @@
   </div>
 </section>
 
+<section class="card" id="contact">
+  <h2>Contact Me</h2>
+  <p>You can reach me here:</p>
+  <ul class="social-links">
+    <li><a href="jenniferlu8964@gmail.com">Email</a></li>
+    <li><a href="https://github.com/NuclearReactor314" target="https://github.com/NuclearReactor314">GitHub</a></li>
+    <li><a href="https://www.strava.com/athletes/139797834" target="https://www.strava.com/athletes/139797834">Strava</a></li>
+    <li><a href="https://www.instagram.com/hairlessness_4869/" target="https://www.instagram.com/hairlessness_4869/">Instagram</a></li>
+    <li><a href="https://www.athletic.net/profile/JenniferLu1/feed" target="https://www.athletic.net/profile/JenniferLu1/feed">Athletic.net</a></li>
+    <li><a href="https://ebird.org/profile/NzA3NDIxOQ/US-CA" target="https://ebird.org/profile/NzA3NDIxOQ/US-CA">eBird</a></li>
+  </ul>
+</section>
+
   <section id="running-stats" class="card">
     <h2>Running Mileage (ERROR HERE, TRYING TO DEBUG)</h2>
     <canvas id="mileageChart" height="150"></canvas>
@@ -155,7 +169,13 @@
   <footer>
     <p>© 2025 Jennifer Lu</p>
   </footer>
-
   <script src="script.js"></script>
+  <script>
+  const toggleButton = document.getElementById('dark-mode-toggle');
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
+  });
+</script>
 </body>
 </html>

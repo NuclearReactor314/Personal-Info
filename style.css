@@ -206,3 +206,35 @@ footer {
   margin-bottom: 6px;
   font-size: 1rem;
 }
+
+body {
+  background-color: #f9f9f9;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card {
+  background-color: #fff;
+  color: #222;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #eee;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: auto;
+}
